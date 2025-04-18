@@ -1,20 +1,12 @@
 {
-  "name": "db",
+  "name": "mongodb-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "db-setup.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "setup": "node db-setup.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
-    "mongodb": "^6.15.0",
-    "nodemon": "^3.1.9"
+    "mongodb": "^6.15.0"
   }
 }
