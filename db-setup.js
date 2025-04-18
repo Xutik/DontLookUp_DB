@@ -83,7 +83,7 @@ async function insertDataToDB(objects, impacts) {
     const impactsMap = new Map(impacts.map((impact) => [impact.name, impact]));
 
     // Join the two arrays
-    const data = objects.map((object) => {
+    let data = objects.map((object) => {
       const impact = impactsMap.get(object.name);
       return {
         ...object,
