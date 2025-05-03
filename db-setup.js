@@ -1,7 +1,9 @@
 import { MongoClient } from "mongodb";
 import fs from "fs";
+import dotenv from "dotenv";
+dotenv.config();
 
-const MONGO_URI = "mongodb://localhost:27017";
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017";
 const DB_NAME = "space";
 
 // Function to read JSON file

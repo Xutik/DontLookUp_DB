@@ -1,0 +1,1 @@
+worker: node db-setup.js
